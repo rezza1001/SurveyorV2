@@ -22,6 +22,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Objects;
 
 public class AddOrderActivity extends MyActivity {
@@ -34,6 +35,8 @@ public class AddOrderActivity extends MyActivity {
     private ArrayList<String> listProducts = new ArrayList<>();
     private ArrayList<String> listConsumers = new ArrayList<>();
     String tmpID = "";
+
+    private HashMap<String, Integer> MappingQty = new HashMap<>();
 
     @Override
     protected int setLayout() {
@@ -93,6 +96,21 @@ public class AddOrderActivity extends MyActivity {
                         listConsumers.add(select.toString());
                     }
 
+                    JSONArray orderDetails = data.getJSONArray("order_details");
+                    for (int i=0; i<orderDetails.length(); i++){
+                        JSONObject order = orderDetails.getJSONObject(i);
+                        String id = order.getString("consumen_id").split(" ")[0];
+
+                        if (MappingQty.get(id) == null){
+                            MappingQty.put(id,order.getInt("qty"));
+                        }
+                        else {
+                            int x = MappingQty.get(id);
+                            int qty = order.getInt("qty") + x;
+                            MappingQty.put(id,qty);
+                        }
+
+                    }
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -169,6 +187,17 @@ public class AddOrderActivity extends MyActivity {
         }
         if (slvw_qty_00.getValue().isEmpty()){
             Utility.showToastError(mActivity,slvw_qty_00.getHint()+" harus diisi!");
+            return;
+        }
+
+        if (MappingQty.get(slvw_jpname_00.getKey()) >= 2){
+            Utility.showToastError(mActivity,"Konsumen "+slvw_jpname_00.getValue()+" sudah memesan 2 item di sales order ini");
+            return;
+        }
+
+        int qty = MappingQty.get(slvw_jpname_00.getKey()) + Integer.parseInt(slvw_qty_00.getKey());
+        if (qty > 2){
+            Utility.showToastError(mActivity,"Konsumen "+slvw_jpname_00.getValue()+" hanya bisa order 1 item lagi untuk sales order ini");
             return;
         }
 

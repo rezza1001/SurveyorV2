@@ -8,8 +8,8 @@ android {
         applicationId "com.wadaro.surveyor"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 24
-        versionName "surveyor v.2.24"
+        versionCode 25
+        versionName "surveyor v.2.25"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
