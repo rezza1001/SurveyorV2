@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bottom_home"
+        android:title="Home"
+        android:icon="@drawable/ic_bottom_home"
+        />
+
+    <item android:id="@+id/bottom_booking"
+        android:title="Survey"
+        android:icon="@drawable/ic_survey" />
+
+    <item android:id="@+id/bottom_data"
+        android:title="Hasil Survey"
+        android:icon="@drawable/ic_datasurvey" />
+
+    <item android:id="@+id/bottom_penugasan"
+        android:title="Rekap"
+        android:icon="@drawable/ic_report" />
+
+    <item android:id="@+id/bottom_profile"
+        android:title="Profil"
+        android:icon="@drawable/ic_profile" />
+
+</menu>

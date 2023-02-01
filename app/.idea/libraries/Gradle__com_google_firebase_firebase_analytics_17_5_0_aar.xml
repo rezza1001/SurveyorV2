@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-analytics:17.5.0@aar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../gradle/gradle-6.3/init.d/caches/transforms-2/files-2.1/775d40413d5bc544fe5bf10f9b5c0110/jetified-firebase-analytics-17.5.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../gradle/gradle-6.3/init.d/caches/transforms-2/files-2.1/775d40413d5bc544fe5bf10f9b5c0110/jetified-firebase-analytics-17.5.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../gradle/gradle-6.3/init.d/caches/transforms-2/files-2.1/775d40413d5bc544fe5bf10f9b5c0110/jetified-firebase-analytics-17.5.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../gradle/gradle-6.3/caches/transforms-2/files-2.1/775d40413d5bc544fe5bf10f9b5c0110/jetified-firebase-analytics-17.5.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../gradle/gradle-6.3/caches/transforms-2/files-2.1/775d40413d5bc544fe5bf10f9b5c0110/jetified-firebase-analytics-17.5.0/res" />
+      <root url="jar://$PROJECT_DIR$/../../../gradle/gradle-6.3/caches/transforms-2/files-2.1/775d40413d5bc544fe5bf10f9b5c0110/jetified-firebase-analytics-17.5.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b57b17aba52c65e28b28b0294ec58227/jetified-firebase-analytics-17.5.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b57b17aba52c65e28b28b0294ec58227/jetified-firebase-analytics-17.5.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b57b17aba52c65e28b28b0294ec58227/jetified-firebase-analytics-17.5.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../gradle/gradle-6.3/caches/modules-2/files-2.1/com.google.firebase/firebase-analytics/17.5.0/3595118ed0ead1cee5178fbd6258f9199eb969a5/firebase-analytics-17.5.0-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-analytics/17.5.0/3595118ed0ead1cee5178fbd6258f9199eb969a5/firebase-analytics-17.5.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

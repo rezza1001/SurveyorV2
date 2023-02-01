@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.survey.CekNIKActivity"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/header_standard"
+        android:id="@+id/incl_header_00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/svContent"
+        android:layout_below="@+id/incl_header_00"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!--status-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data NIK sudah ada"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/tv_highlight"
+                />
+
+            <!--no ktp-->
+            <com.wadaro.surveyor.ui.survey.KeyValueView
+                android:id="@+id/kvl_ktp_00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--nama-->
+            <com.wadaro.surveyor.ui.survey.KeyValueView
+                android:id="@+id/kvl_name_00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.wadaro.surveyor.ui.survey.KeyValueView
+                android:id="@+id/kvl_phone_00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!--alamat kordinator-->
+            <com.wadaro.surveyor.ui.survey.KeyValueView
+                android:id="@+id/kvl_address_00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+            <!--button-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnSimpan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/ripple_btn"
+                    android:text="Menggunakan Data Ini"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    />
+
+                <Button
+                    android:id="@+id/btnBatal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple_btn_cancel"
+                    android:text="Tidak"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="16sp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

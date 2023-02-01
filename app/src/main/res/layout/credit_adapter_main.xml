@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/lnly_root_00"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+                <TextView
+                    android:id="@+id/txvw_nottb_00"
+                    android:text="No. TTB"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:paddingStart="10dp"
+                    android:textSize="10sp"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/txvw_coordinator_00"
+                    android:text="Koordinator"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:paddingStart="10dp"
+                    android:layout_width="130dp"
+                    android:textSize="12sp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/txvw_isntall_00"
+                    android:text="Angs."
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:paddingStart="10dp"
+                    android:textSize="12sp"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/txvw_total_00"
+                    android:text="Total Angsuran"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:paddingStart="10dp"
+                    android:textSize="12sp"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/txvw_paydate_00"
+                    android:text="Total Angsuran"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:paddingStart="10dp"
+                    android:textSize="12sp"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

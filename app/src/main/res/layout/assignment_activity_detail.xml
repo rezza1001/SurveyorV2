@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.assignment.DetilActivity"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/header_standard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lnly_body_00"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imvw_coordinator_00"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"/>
+                <ImageView
+                    android:id="@+id/imvw_location_00"
+                    android:layout_marginStart="80dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Foto Koordinator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="Foto Lokasi"
+                    android:layout_marginStart="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:weightSum="4"
+                        android:background="#28000000"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                        <TextView
+                            android:text="Pemesan"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:textColor="#de000000"
+                            android:textStyle="bold"
+                            android:layout_width="120dp"
+                            android:textSize="12sp"
+                            android:layout_height="match_parent"/>
+                        <TextView
+                            android:text="Barang"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:textColor="#de000000"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:text="QTY"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:textColor="#de000000"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:text="Harga"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:textColor="#de000000"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:text="Angsuran"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:textColor="#de000000"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:text="Foto KTP"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:textColor="#de000000"
+                            android:textStyle="bold"
+                            android:textSize="12dp"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcvw_data_00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txvw_size_00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total ada 0 sales order"
+                        android:layout_marginTop="8dp"
+                        android:gravity="right" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/lnly_action_00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/bbtn_process_00"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/ripple_btn"
+                    android:text="Proses Survey"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    />
+
+                <Button
+                    android:id="@+id/bbtn_cancel_00"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple_btn_cancel"
+                    android:text="Batal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

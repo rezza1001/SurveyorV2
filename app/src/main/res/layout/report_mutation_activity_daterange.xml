@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.rekap.DateRangeActivity">
+
+    <com.savvi.rangedatepicker.CalendarPickerView
+        android:id="@+id/clvw_calendar_00"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tsquare_dividerColor="@color/colorPrimaryDark"
+
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="60dp" />
+
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/mrly_action_00"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleHover="true"
+            android:layout_width="135dp"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/txvw_action_00"
+                android:textSize="15sp"
+                android:text="Pilih"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:background="#014291"
+        android:id="@+id/lnly_header_00"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/mrly_back_00"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imvw_back_00"
+                    android:src="@drawable/ic_arrow_back"
+                    android:tint="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+
+                <TextView
+                    android:id="@+id/txvw_header_00"
+                    android:text="Pilih Tanggal"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

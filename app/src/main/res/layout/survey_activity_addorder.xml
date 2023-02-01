@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/header_standard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.wadaro.surveyor.component.SelectView
+            android:id="@+id/slvw_jpname_00"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.wadaro.surveyor.component.SelectView
+            android:id="@+id/slvw_goods_00"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.wadaro.surveyor.component.SelectView
+            android:id="@+id/slvw_qty_00"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/bbtn_save_00"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/ripple_btn"
+                    android:text="Simpan"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/bbtn_cancel_00"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ripple_btn_cancel"
+                    android:text="Batal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="16sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

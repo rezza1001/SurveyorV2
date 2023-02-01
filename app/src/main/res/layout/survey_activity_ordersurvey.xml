@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        layout="@layout/header_standard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. KTP / NIK Konsumen"
+                android:layout_marginTop="@dimen/margin_for_form"/>
+
+            <RelativeLayout
+                android:id="@+id/rvly_nik_00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/edtx_nik_00"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shape_ev"
+                    android:layout_toLeftOf="@+id/bbtn_check_00"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:inputType="numberDecimal"
+                    android:paddingRight="8dp"
+                    android:paddingLeft="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/bbtn_check_00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_btn"
+                    android:layout_alignParentRight="true"
+                    android:text="Cek NIK"
+                    android:textColor="@color/white"
+                    />
+
+            </RelativeLayout>
+
+           <LinearLayout
+               android:id="@+id/lnly_body_00"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <!--nama koordinator-->
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/margin_for_form">
+
+                   <TextView
+                       android:id="@+id/tvNamaKordinator"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Nama Konsumen"
+                       android:layout_alignParentLeft="true"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="*"
+                       android:textColor="@color/required_color"
+                       android:layout_marginLeft="8dp"
+                       android:layout_toRightOf="@+id/tvNamaKordinator"/>
+
+               </RelativeLayout>
+
+               <EditText
+                   android:id="@+id/edtx_name_00"
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:background="@drawable/shape_ev"
+                   android:inputType="textPersonName"
+                   android:paddingRight="8dp"
+                   android:paddingLeft="8dp"
+                   />
+
+               <!--nama panggilan-->
+
+               <!--no tlp-->
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/margin_for_form">
+
+                   <TextView
+                       android:id="@+id/tvJadwalDemo"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Nomo Hp"
+                       android:layout_alignParentLeft="true"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="*"
+                       android:textColor="@color/required_color"
+                       android:layout_marginLeft="8dp"
+                       android:layout_toRightOf="@+id/tvJadwalDemo"/>
+
+               </RelativeLayout>
+
+               <EditText
+                   android:id="@+id/edtx_phone_00"
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:background="@drawable/shape_ev"
+                   android:inputType="phone"
+                   android:paddingRight="8dp"
+                   android:paddingLeft="8dp"
+                   />
+
+               <!--alamat kordinator-->
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/margin_for_form">
+
+                   <TextView
+                       android:id="@+id/tvAlamatKordinator"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Alamat"
+                       android:layout_alignParentLeft="true" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="*"
+                       android:textColor="@color/required_color"
+                       android:layout_marginLeft="8dp"
+                       android:layout_toRightOf="@+id/tvAlamatKordinator"/>
+                   <EditText
+                       android:id="@+id/edtx_address_00"
+                       android:layout_below="@+id/tvAlamatKordinator"
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                       android:background="@drawable/shape_ev"
+                       android:inputType="textPostalAddress"
+                       android:paddingRight="8dp"
+                       android:paddingLeft="8dp"/>
+               </RelativeLayout>
+
+               <LinearLayout
+                   android:id="@+id/lnly_photo_00"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:paddingTop="5dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/margin_for_form">
+                   <LinearLayout
+                       android:orientation="vertical"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Foto KTP/SIM/KK/Rek.Listrik" />
+                       <RelativeLayout
+                           android:id="@+id/rvly_coordinator_00"
+                           android:layout_marginRight="10dp"
+                           android:layout_marginTop="5dp"
+                           android:background="@drawable/backround_photo"
+                           android:layout_width="220dp"
+                           android:layout_height="130dp">
+                           <ImageView
+                               android:id="@+id/imvw_icon_01"
+                               android:layout_centerInParent="true"
+                               android:src="@drawable/ic_cloud_upload"
+                               android:layout_width="40dp"
+                               android:layout_height="40dp"/>
+                           <TextView
+                               android:id="@+id/txvw_foto_00"
+                               android:text="Upload Foto"
+                               android:layout_below="@id/imvw_icon_01"
+                               android:layout_centerHorizontal="true"
+                               android:textSize="13sp"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"/>
+
+                           <com.makeramen.roundedimageview.RoundedImageView
+                               android:id="@+id/imvw_coordinator_00"
+                               app:riv_corner_radius="5dp"
+                               android:layout_margin="2dp"
+                               android:scaleType="centerCrop"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"/>
+
+                       </RelativeLayout>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:orientation="vertical"
+                       android:layout_marginLeft="20dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+               </LinearLayout>
+
+               <RelativeLayout
+                   android:layout_marginTop="20dp"
+                   android:background="#80000000"
+                   android:layout_width="match_parent"
+                   android:layout_height="35dp">
+                   <TextView
+                       android:text="BARANG"
+                       android:textColor="@color/white"
+                       android:textStyle="bold"
+                       android:textSize="16sp"
+                       android:layout_marginLeft="5dp"
+                       android:layout_centerVertical="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+                   <ImageView
+                       android:id="@+id/imvw_add_00"
+                       android:layout_alignParentEnd="true"
+                       android:src="@drawable/ic_add_circle"
+                       android:padding="2dp"
+                       android:layout_width="35dp"
+                       android:layout_height="35dp"/>
+               </RelativeLayout>
+               <LinearLayout
+                   android:weightSum="5"
+                   android:background="#28000000"
+                   android:paddingLeft="5dp"
+                   android:paddingRight="5dp"
+                   android:orientation="horizontal"
+                   android:gravity="center_vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="35dp">
+                   <TextView
+                       android:text="Nama Barang"
+                       android:layout_weight="3.5"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"/>
+                   <TextView
+                       android:text="QTY"
+                       android:layout_weight="0.8"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"/>
+                   <View
+                       android:layout_weight="0.8"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"/>
+               </LinearLayout>
+               <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/rcvw_goods_00"
+                   android:layout_marginBottom="20dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+
+               <com.wadaro.surveyor.component.SelectView
+                   android:id="@+id/slvw_allowbuy_00"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+               <RelativeLayout
+                   android:id="@+id/lnly_reason_00"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/margin_for_form">
+
+                   <com.wadaro.surveyor.component.SelectView
+                       android:id="@+id/slvw_reason_00"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+               </RelativeLayout>
+               <LinearLayout
+                   android:id="@+id/lnly_yes_00"
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                   <com.wadaro.surveyor.component.SelectView
+                       android:id="@+id/slvw_home_00"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+                   <com.wadaro.surveyor.component.SelectView
+                       android:id="@+id/slvw_job_00"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+                   <com.wadaro.surveyor.component.SelectView
+                       android:id="@+id/slvw_arthome_00"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+                   <com.wadaro.surveyor.component.SelectView
+                       android:id="@+id/slvw_honesty_00"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+                   <com.wadaro.surveyor.component.SelectView
+                       android:id="@+id/slvw_responsibility_00"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+                   <com.wadaro.surveyor.component.SelectView
+                       android:id="@+id/slvw_people_00"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/margin_for_form">
+
+                       <TextView
+                           android:id="@+id/txvw_cost_00"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Pendapatan Per Bulan"
+                           android:layout_alignParentLeft="true" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="*"
+                           android:textColor="@color/required_color"
+                           android:layout_marginLeft="8dp"
+                           android:layout_toRightOf="@+id/txvw_cost_00"/>
+                       <EditText
+                           android:id="@+id/edtx_cost_00"
+                           android:layout_below="@+id/txvw_cost_00"
+                           android:layout_width="match_parent"
+                           android:layout_height="40dp"
+                           android:background="@drawable/shape_ev"
+                           android:inputType="numberDecimal"
+                           android:paddingRight="8dp"
+                           android:paddingLeft="8dp"/>
+                   </RelativeLayout>
+                   <LinearLayout
+                       android:orientation="horizontal"
+                       android:weightSum="2"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <LinearLayout
+                           android:id="@+id/lnly_point_00"
+                           android:orientation="vertical"
+                           android:layout_weight="0.5"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="#de000000"
+                               android:text="Nilai" />
+                           <TextView
+                               android:id="@+id/txviw_point_00"
+                               android:textSize="18sp"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="#de000000"
+                               android:text="0" />
+                       </LinearLayout>
+                       <LinearLayout
+                           android:id="@+id/lnly_status_00"
+                           android:orientation="vertical"
+                           android:layout_weight="1.5"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content">
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="#de000000"
+                               android:text="Penilaian" />
+                           <TextView
+                               android:id="@+id/txviw_status_00"
+                               android:textSize="18sp"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="#de000000"
+                               android:text="-" />
+                       </LinearLayout>
+                   </LinearLayout>
+                   <LinearLayout
+                       android:id="@+id/lnly_note_00"
+                       android:visibility="gone"
+                       android:orientation="vertical"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <com.wadaro.surveyor.component.SelectView
+                           android:id="@+id/slvw_point_00"
+                           android:layout_marginTop="10dp"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"/>
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="@dimen/margin_for_form">
+
+                           <TextView
+                               android:id="@+id/txvw_note_00"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Catatan"
+                               android:layout_alignParentLeft="true" />
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="*"
+                               android:textColor="@color/required_color"
+                               android:layout_marginLeft="8dp"
+                               android:layout_toRightOf="@+id/txvw_note_00"/>
+                           <EditText
+                               android:id="@+id/edtx_note_00"
+                               android:layout_below="@+id/txvw_note_00"
+                               android:layout_width="match_parent"
+                               android:layout_height="40dp"
+                               android:background="@drawable/shape_ev"
+                               android:inputType="textMultiLine"
+                               android:paddingRight="8dp"
+                               android:paddingLeft="8dp"/>
+                       </RelativeLayout>
+                   </LinearLayout>
+                   <com.wadaro.surveyor.component.SelectView
+                       android:id="@+id/slvw_reff_00"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+
+               </LinearLayout>
+               <!--button-->
+               <LinearLayout
+                   android:id="@+id/lnly_action_00"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:weightSum="4"
+                   android:layout_marginTop="16dp"
+                   android:layout_marginBottom="16dp">
+
+                   <Button
+                       android:id="@+id/bbtn_save_00"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="3"
+                       android:background="@drawable/ripple_btn"
+                       android:text="Simpan"
+                       android:textAllCaps="false"
+                       android:textColor="@color/white"
+                       />
+
+                   <Button
+                       android:id="@+id/bbtn_cancel_00"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:background="@drawable/ripple_btn_cancel"
+                       android:text="Batal"
+                       android:textAllCaps="false"
+                       android:textColor="@color/white"
+                       android:layout_marginLeft="16sp" />
+
+               </LinearLayout>
+           </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f6f6f7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_standard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+   <androidx.core.widget.NestedScrollView
+       android:layout_below="@+id/header"
+       android:layout_marginBottom="65dp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:id="@+id/lnly_body_00"
+               android:layout_marginTop="10dp"
+               android:layout_marginEnd="15dp"
+               android:layout_marginStart="15dp"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <View
+               android:background="@color/theme_color"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"/>
+           <TextView
+               android:text="Ganti Konsumen"
+               android:textStyle="bold"
+               android:textSize="16sp"
+               android:textColor="#de000000"
+               android:layout_marginBottom="10dp"
+               android:layout_marginStart="15dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_marginEnd="15dp"
+               android:layout_marginStart="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <com.wadaro.surveyor.component.InputBasicView
+                   android:id="@+id/input_name_00"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+               <com.wadaro.surveyor.component.InputBasicView
+                   android:id="@+id/input_phone_00"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+               <com.wadaro.surveyor.component.InputBasicView
+                   android:id="@+id/input_identity_00"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+               <com.wadaro.surveyor.component.InputBasicView
+                   android:id="@+id/input_address_00"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+               <com.wadaro.surveyor.component.InputBasicView
+                   android:id="@+id/input_note_00"
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"/>
+           </LinearLayout>
+       </LinearLayout>
+
+   </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/bbtn_process_00"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/ripple_btn"
+            android:text="Simpan"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/bbtn_cancel_00"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/ripple_btn_cancel"
+            android:text="Batal"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginLeft="16sp" />
+
+    </LinearLayout>
+</RelativeLayout>

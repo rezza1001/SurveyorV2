@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f6f6f7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_standard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_below="@+id/header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.wadaro.surveyor.component.SelectView
+            android:id="@+id/slvw_date_00"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:background="@color/colorPrimary"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+                    <TextView
+                        android:text="No. TTB"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"/>
+                    <View
+                        android:background="@color/white"
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:text="Koordinator"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_width="130dp"
+                        android:textSize="12sp"
+                        android:layout_height="match_parent"/>
+                    <View
+                        android:background="@color/white"
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:text="Angs."
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"/>
+                    <View
+                        android:background="@color/white"
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:text="Total Angsuran"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"/>
+                    <View
+                        android:background="@color/white"
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:text="Tgl. tagihan"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvw_data_00"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rvly_header"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/mrly_back_00"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center"
+                android:tint="@color/white"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/mrly_back_00"
+            android:text="Rekap Unit Per-Promotor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvw_data"
+        android:layout_below="@+id/rvly_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

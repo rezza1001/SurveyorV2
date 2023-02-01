@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "437704362453",
+    "firebase_url": "https://surveyor-bc41d.firebaseio.com",
+    "project_id": "surveyor-bc41d",
+    "storage_bucket": "surveyor-bc41d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437704362453:android:ee832d273aa77314d9d55c",
+        "android_client_info": {
+          "package_name": "com.wadaro.surveyor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437704362453-dsakcblkacs7pd5ggrd4llnhsditg162.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMxz-DKv8Z-uR0dPE6ZBCCTCwXe4KT5Mo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437704362453-dsakcblkacs7pd5ggrd4llnhsditg162.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
